@@ -17,6 +17,12 @@
 		63789D2F274EE334007BCEA1 /* FinalProjTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63789D2E274EE334007BCEA1 /* FinalProjTests.swift */; };
 		63789D3A274EE334007BCEA1 /* FinalProjUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63789D39274EE334007BCEA1 /* FinalProjUITests.swift */; };
 		63789D4C274EF44D007BCEA1 /* wx_65@1X (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 63789D4B274EF44D007BCEA1 /* wx_65@1X (1).png */; };
+		63789D51274F57BE007BCEA1 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63789D50274F57BE007BCEA1 /* SignUpController.swift */; };
+		63789D57274F5837007BCEA1 /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63789D56274F5837007BCEA1 /* WeatherController.swift */; };
+		63789D5F274F5869007BCEA1 /* CompassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63789D5E274F5869007BCEA1 /* CompassController.swift */; };
+		63789D64274F5886007BCEA1 /* SOSController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63789D63274F5886007BCEA1 /* SOSController.swift */; };
+		63789D69274F591F007BCEA1 /* ClockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63789D68274F591F007BCEA1 /* ClockController.swift */; };
+		63789D6E274F593B007BCEA1 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63789D6D274F593B007BCEA1 /* SettingsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,12 @@
 		63789D39274EE334007BCEA1 /* FinalProjUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjUITests.swift; sourceTree = "<group>"; };
 		63789D3B274EE334007BCEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63789D4B274EF44D007BCEA1 /* wx_65@1X (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wx_65@1X (1).png"; sourceTree = "<group>"; };
+		63789D50274F57BE007BCEA1 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		63789D56274F5837007BCEA1 /* WeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherController.swift; sourceTree = "<group>"; };
+		63789D5E274F5869007BCEA1 /* CompassController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassController.swift; sourceTree = "<group>"; };
+		63789D63274F5886007BCEA1 /* SOSController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSController.swift; sourceTree = "<group>"; };
+		63789D68274F591F007BCEA1 /* ClockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockController.swift; sourceTree = "<group>"; };
+		63789D6D274F593B007BCEA1 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				63789D13274EE334007BCEA1 /* FinalProj */,
-				63789D2D274EE334007BCEA1 /* FinalProjTests */,
 				63789D38274EE334007BCEA1 /* FinalProjUITests */,
 				63789D12274EE334007BCEA1 /* Products */,
 			);
@@ -103,15 +114,16 @@
 		63789D13274EE334007BCEA1 /* FinalProj */ = {
 			isa = PBXGroup;
 			children = (
+				63789D55274F57CA007BCEA1 /* Controllers */,
 				63789D4A274EF441007BCEA1 /* Images */,
 				63789D14274EE334007BCEA1 /* AppDelegate.swift */,
 				63789D16274EE334007BCEA1 /* SceneDelegate.swift */,
-				63789D18274EE334007BCEA1 /* ViewController.swift */,
 				63789D1A274EE334007BCEA1 /* Main.storyboard */,
 				63789D20274EE334007BCEA1 /* Assets.xcassets */,
 				63789D22274EE334007BCEA1 /* LaunchScreen.storyboard */,
 				63789D25274EE334007BCEA1 /* Info.plist */,
 				63789D1D274EE334007BCEA1 /* FinalProj.xcdatamodeld */,
+				63789D2D274EE334007BCEA1 /* FinalProjTests */,
 			);
 			path = FinalProj;
 			sourceTree = "<group>";
@@ -140,6 +152,20 @@
 				63789D4B274EF44D007BCEA1 /* wx_65@1X (1).png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		63789D55274F57CA007BCEA1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				63789D50274F57BE007BCEA1 /* SignUpController.swift */,
+				63789D18274EE334007BCEA1 /* ViewController.swift */,
+				63789D56274F5837007BCEA1 /* WeatherController.swift */,
+				63789D5E274F5869007BCEA1 /* CompassController.swift */,
+				63789D63274F5886007BCEA1 /* SOSController.swift */,
+				63789D68274F591F007BCEA1 /* ClockController.swift */,
+				63789D6D274F593B007BCEA1 /* SettingsController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,10 +299,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63789D51274F57BE007BCEA1 /* SignUpController.swift in Sources */,
 				63789D19274EE334007BCEA1 /* ViewController.swift in Sources */,
+				63789D69274F591F007BCEA1 /* ClockController.swift in Sources */,
+				63789D5F274F5869007BCEA1 /* CompassController.swift in Sources */,
+				63789D57274F5837007BCEA1 /* WeatherController.swift in Sources */,
 				63789D15274EE334007BCEA1 /* AppDelegate.swift in Sources */,
+				63789D6E274F593B007BCEA1 /* SettingsController.swift in Sources */,
 				63789D17274EE334007BCEA1 /* SceneDelegate.swift in Sources */,
 				63789D1F274EE334007BCEA1 /* FinalProj.xcdatamodeld in Sources */,
+				63789D64274F5886007BCEA1 /* SOSController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
