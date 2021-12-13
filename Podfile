@@ -16,7 +16,7 @@ target 'FinalProj' do
     # Pods for testing
   end
 
-pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
-
+pod 'Firebase/Firestore'
+pod 'SwiftyJSON', '~> 4.0'
 end

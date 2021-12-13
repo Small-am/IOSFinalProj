@@ -74,10 +74,8 @@ class SignInViewController: UIViewController {
                 let alert = UIAlertController(title: "Success!", message: "You've successfully signed up for Celestial Weather", preferredStyle: UIAlertController.Style.alert)
                 alert.addAction(UIAlertAction(title: "Close", style: UIAlertAction.Style.default, handler: { action in
                     print("close clicked")
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let vc = storyboard.instantiateViewController(identifier: "weather")
-                    vc.modalPresentationStyle = .overFullScreen
-                    self!.present(vc, animated: true)
+                    let vc = self?.storyboard?.instantiateViewController(identifier: "weather")
+                    self!.present(vc!, animated: true)
                 }))
                 self!.present(alert, animated: true, completion: nil)
                 
