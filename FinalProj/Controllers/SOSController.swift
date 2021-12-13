@@ -13,16 +13,14 @@ class SOSController: UIViewController {
     
 
     @IBAction func sosButton(_ sender: Any) {
-//        let formattedNumber = phoneNumberVariable.components(separatedBy: NSCharacterSet.decimalDigits.inverted).joined(separator: "")
-//
-//        if let url = NSURL(string: ("tel:" + (formattedNumber)!)) {
-//            if #available(iOS 10.0, *) {
-//                UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
-//            } else {
-//                UIApplication.shared.openURL(url as URL)
-//            }
-//        }
-        
+
+        if let phoneCallURL = URL(string: "tel://911") {
+
+           let application:UIApplication = UIApplication.shared
+           if (application.canOpenURL(phoneCallURL)) {
+               application.open(phoneCallURL, options: [:], completionHandler: nil)
+           }
+         }
     }
     
     override func viewDidLoad() {

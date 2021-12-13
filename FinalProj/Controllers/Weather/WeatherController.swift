@@ -80,7 +80,7 @@ class WeatherController: UIViewController, UITableViewDelegate, UITableViewDataS
                 let formater = NumberFormatter()
                 formater.numberStyle = .decimal
                 formater.maximumFractionDigits = 2
-                let value = Double(json["current"]["temp"].stringValue)! - 273.15
+                let value = (Double(json["current"]["temp"].stringValue) ?? 0) - 273.15
                 temp.temp = Double(String(format: "%.2f", value))!
                 let tempWeather = Weather.init(weatherDescription: json["current"]["weather"][0]["main"].stringValue, icon: json["current"]["weather"][0]["icon"].stringValue )
                 temp.weather.removeAll()
