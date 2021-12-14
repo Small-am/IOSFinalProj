@@ -74,7 +74,7 @@ class SignInViewController: UIViewController {
                 let alert = UIAlertController(title: "Success!", message: "You've successfully signed up for Celestial Weather", preferredStyle: UIAlertController.Style.alert)
                 alert.addAction(UIAlertAction(title: "Close", style: UIAlertAction.Style.default, handler: { action in
                     print("close clicked")
-                    let vc = self?.storyboard?.instantiateViewController(identifier: "weather")
+                    let vc = self?.storyboard?.instantiateViewController(identifier: "tabBar")
                     self!.present(vc!, animated: true)
                 }))
                 self!.present(alert, animated: true, completion: nil)
@@ -93,7 +93,7 @@ class SignInViewController: UIViewController {
             print("Current user ID: ", Auth.auth().currentUser?.uid)
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(identifier: "weather")
+            let vc = storyboard.instantiateViewController(identifier: "tabBar")
             vc.modalPresentationStyle = .overFullScreen
             present(vc, animated: true)
         }

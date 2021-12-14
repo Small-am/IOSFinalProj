@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="196-2c-eYu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K0g-8i-eAt">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -195,27 +194,27 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="DoU-dz-gxV" customClass="DetailedTableViewCell" customModule="FinalProj" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="43"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DoU-dz-gxV" id="yVr-w5-pi7">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msc-nd-qY7">
-                                                    <rect key="frame" x="20" y="11" width="38" height="21"/>
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="38" height="21.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunny" translatesAutoresizingMaskIntoConstraints="NO" id="9Wk-aP-aBG">
-                                                    <rect key="frame" x="345" y="5" width="49" height="33"/>
+                                                    <rect key="frame" x="345" y="5.3333333333333321" width="49" height="33"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="33" id="afk-xS-1oI"/>
                                                         <constraint firstAttribute="width" constant="49" id="hXL-Mo-kGx"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8o-oc-9pL">
-                                                    <rect key="frame" x="294" y="11" width="43" height="21"/>
+                                                    <rect key="frame" x="294" y="11.000000000000002" width="43" height="21.666666666666671"/>
                                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -322,9 +321,6 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Add Location">
-                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
-                                </buttonConfiguration>
                                 <connections>
                                     <action selector="addLocation" destination="7Q9-lO-NNg" eventType="touchUpInside" id="Mnp-Yb-xMk"/>
                                 </connections>
@@ -367,7 +363,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="222" id="ON0-if-JwL" customClass="WeatherTableViewCell" customModule="FinalProj" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="222"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="222"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ON0-if-JwL" id="dMP-AR-otd">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="222"/>
@@ -376,7 +372,6 @@
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mC-b4-Srx">
                                                     <rect key="frame" x="0.0" y="-0.66666603088378906" width="414" height="222"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                                     <connections>
                                                         <action selector="sendWithSender:" destination="NEM-iN-Sgs" eventType="touchUpInside" id="Aek-oj-bz6"/>
                                                     </connections>
@@ -451,19 +446,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="von-Wg-BWs">
-                                <rect key="frame" x="348" y="92" width="46" height="31"/>
+                                <rect key="frame" x="348" y="92" width="46" height="30"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" title=" "/>
                                 <connections>
                                     <segue destination="7Q9-lO-NNg" kind="show" id="XnR-4Y-RJv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeL-2n-jst">
-                                <rect key="frame" x="278" y="92" width="78" height="31"/>
+                                <rect key="frame" x="310" y="92" width="46" height="30"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title=" Refresh"/>
                                 <connections>
                                     <action selector="getTemp" destination="NEM-iN-Sgs" eventType="touchUpInside" id="mqW-5F-aE1"/>
                                 </connections>
@@ -686,7 +679,7 @@ aG9yaXRpZXMuClByb2NlZWQgd2l0aCBjYXV0aW9uA
         <!--Tab Bar Controller-->
         <scene sceneID="yrD-go-5AW">
             <objects>
-                <tabBarController id="196-2c-eYu" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="196-2c-eYu" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="g5E-ic-A3i"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UmA-t9-c9O">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -844,7 +837,6 @@ aG9yaXRpZXMuClByb2NlZWQgd2l0aCBjYXV0aW9uA
         <image name="detailbg" width="375" height="442.33334350585938"/>
         <image name="invalidName" width="341" height="126"/>
         <image name="mightrain" width="62.333332061767578" height="50"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="sos" width="37" height="37"/>
         <image name="sunny" width="62" height="62"/>
         <image name="weatherbg" width="361" height="218"/>
