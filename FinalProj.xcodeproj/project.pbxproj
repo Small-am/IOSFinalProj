@@ -14,6 +14,9 @@
 		22272F9D27653CE700E8AE28 /* LocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22272F9C27653CE700E8AE28 /* LocationPickerViewController.swift */; };
 		22272F9F27656AD800E8AE28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22272F9E27656AD800E8AE28 /* GoogleService-Info.plist */; };
 		22272FA32765702A00E8AE28 /* LocationStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22272FA22765702A00E8AE28 /* LocationStruct.swift */; };
+		2D807EB3276AD0D900BF51E9 /* CompassHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D807EB2276AD0D900BF51E9 /* CompassHeading.swift */; };
+		2D807EB7276AD5E900BF51E9 /* CompassContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D807EB6276AD5E900BF51E9 /* CompassContentView.swift */; };
+		2D807EB9276AD64400BF51E9 /* CompassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D807EB8276AD64400BF51E9 /* CompassViewController.swift */; };
 		4365CA965117A258F49ED630 /* Pods_FinalProjTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 159E696E18440E0E15DB4B06 /* Pods_FinalProjTests.framework */; };
 		63789D15274EE334007BCEA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63789D14274EE334007BCEA1 /* AppDelegate.swift */; };
 		63789D17274EE334007BCEA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63789D16274EE334007BCEA1 /* SceneDelegate.swift */; };
@@ -25,7 +28,6 @@
 		63789D2F274EE334007BCEA1 /* FinalProjTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63789D2E274EE334007BCEA1 /* FinalProjTests.swift */; };
 		63789D3A274EE334007BCEA1 /* FinalProjUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63789D39274EE334007BCEA1 /* FinalProjUITests.swift */; };
 		63789D57274F5837007BCEA1 /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63789D56274F5837007BCEA1 /* WeatherController.swift */; };
-		63789D5F274F5869007BCEA1 /* CompassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63789D5E274F5869007BCEA1 /* CompassController.swift */; };
 		63789D64274F5886007BCEA1 /* SOSController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63789D63274F5886007BCEA1 /* SOSController.swift */; };
 		63789D69274F591F007BCEA1 /* ClockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63789D68274F591F007BCEA1 /* ClockController.swift */; };
 		63789D6E274F593B007BCEA1 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63789D6D274F593B007BCEA1 /* SettingsController.swift */; };
@@ -60,6 +62,9 @@
 		22272F9C27653CE700E8AE28 /* LocationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerViewController.swift; sourceTree = "<group>"; };
 		22272F9E27656AD800E8AE28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		22272FA22765702A00E8AE28 /* LocationStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationStruct.swift; sourceTree = "<group>"; };
+		2D807EB2276AD0D900BF51E9 /* CompassHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassHeading.swift; sourceTree = "<group>"; };
+		2D807EB6276AD5E900BF51E9 /* CompassContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassContentView.swift; sourceTree = "<group>"; };
+		2D807EB8276AD64400BF51E9 /* CompassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassViewController.swift; sourceTree = "<group>"; };
 		34A244083C2B66D6C0A71B01 /* Pods-FinalProjTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProjTests.release.xcconfig"; path = "Target Support Files/Pods-FinalProjTests/Pods-FinalProjTests.release.xcconfig"; sourceTree = "<group>"; };
 		35761C13D18B6595F0E325B3 /* Pods_FinalProj_FinalProjUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalProj_FinalProjUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E5886594F0F0A1E480BB12 /* Pods-FinalProj-FinalProjUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProj-FinalProjUITests.release.xcconfig"; path = "Target Support Files/Pods-FinalProj-FinalProjUITests/Pods-FinalProj-FinalProjUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,7 +85,6 @@
 		63789D39274EE334007BCEA1 /* FinalProjUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjUITests.swift; sourceTree = "<group>"; };
 		63789D3B274EE334007BCEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63789D56274F5837007BCEA1 /* WeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherController.swift; sourceTree = "<group>"; };
-		63789D5E274F5869007BCEA1 /* CompassController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassController.swift; sourceTree = "<group>"; };
 		63789D63274F5886007BCEA1 /* SOSController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSController.swift; sourceTree = "<group>"; };
 		63789D68274F591F007BCEA1 /* ClockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockController.swift; sourceTree = "<group>"; };
 		63789D6D274F593B007BCEA1 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
@@ -211,7 +215,9 @@
 			children = (
 				226E4B3927652C8600DFF8E4 /* Weather */,
 				63789D18274EE334007BCEA1 /* ViewController.swift */,
-				63789D5E274F5869007BCEA1 /* CompassController.swift */,
+				2D807EB2276AD0D900BF51E9 /* CompassHeading.swift */,
+				2D807EB6276AD5E900BF51E9 /* CompassContentView.swift */,
+				2D807EB8276AD64400BF51E9 /* CompassViewController.swift */,
 				63789D63274F5886007BCEA1 /* SOSController.swift */,
 				63789D68274F591F007BCEA1 /* ClockController.swift */,
 				63789D6D274F593B007BCEA1 /* SettingsController.swift */,
@@ -478,13 +484,15 @@
 				22272F9B276531F900E8AE28 /* DetailedViewController.swift in Sources */,
 				63789D69274F591F007BCEA1 /* ClockController.swift in Sources */,
 				22272F992765319A00E8AE28 /* DetailedTableViewCell.swift in Sources */,
-				63789D5F274F5869007BCEA1 /* CompassController.swift in Sources */,
 				63789D57274F5837007BCEA1 /* WeatherController.swift in Sources */,
 				7D94DD02276428B8003F13E8 /* SignUpViewController.swift in Sources */,
 				63789D15274EE334007BCEA1 /* AppDelegate.swift in Sources */,
+				2D807EB3276AD0D900BF51E9 /* CompassHeading.swift in Sources */,
+				2D807EB9276AD64400BF51E9 /* CompassViewController.swift in Sources */,
 				63789D6E274F593B007BCEA1 /* SettingsController.swift in Sources */,
 				63789D17274EE334007BCEA1 /* SceneDelegate.swift in Sources */,
 				63789D1F274EE334007BCEA1 /* FinalProj.xcdatamodeld in Sources */,
+				2D807EB7276AD5E900BF51E9 /* CompassContentView.swift in Sources */,
 				22272F9627652D4600E8AE28 /* WeatherTableViewCell.swift in Sources */,
 				22272FA32765702A00E8AE28 /* LocationStruct.swift in Sources */,
 				22272F9D27653CE700E8AE28 /* LocationPickerViewController.swift in Sources */,
