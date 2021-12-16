@@ -541,12 +541,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YN-dL-BOo">
-                                <rect key="frame" x="20" y="44" width="48" height="38"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXn-5k-cCk">
                                 <rect key="frame" x="36" y="207" width="346" height="126"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -569,16 +563,22 @@ aG9yaXRpZXMuClByb2NlZWQgd2l0aCBjYXV0aW9uA
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YN-dL-BOo">
+                                <rect key="frame" x="20" y="44" width="48" height="38"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bFO-UD-ZWO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="0YN-dL-BOo" firstAttribute="top" secondItem="bFO-UD-ZWO" secondAttribute="top" id="ASr-zh-dB5"/>
                             <constraint firstItem="CSL-UF-ypb" firstAttribute="top" secondItem="UXn-5k-cCk" secondAttribute="bottom" constant="64" id="COL-Ep-BS3"/>
+                            <constraint firstItem="0YN-dL-BOo" firstAttribute="leading" secondItem="bFO-UD-ZWO" secondAttribute="leading" constant="20" id="LnI-6A-ghF"/>
                             <constraint firstItem="bFO-UD-ZWO" firstAttribute="bottom" secondItem="CSL-UF-ypb" secondAttribute="bottom" constant="224" id="Qff-zt-lDC"/>
-                            <constraint firstItem="UXn-5k-cCk" firstAttribute="top" secondItem="0YN-dL-BOo" secondAttribute="bottom" constant="125" id="Vvm-Sk-GMK"/>
                             <constraint firstItem="bFO-UD-ZWO" firstAttribute="trailing" secondItem="UXn-5k-cCk" secondAttribute="trailing" constant="32" id="cvH-BH-WD4"/>
                             <constraint firstItem="UXn-5k-cCk" firstAttribute="leading" secondItem="bFO-UD-ZWO" secondAttribute="leading" constant="36" id="dSU-2n-8cJ"/>
-                            <constraint firstItem="0YN-dL-BOo" firstAttribute="leading" secondItem="fHV-kL-3DX" secondAttribute="leadingMargin" id="j9W-RH-Gte"/>
                             <constraint firstItem="bFO-UD-ZWO" firstAttribute="trailing" secondItem="CSL-UF-ypb" secondAttribute="trailing" constant="47" id="lBO-5e-6Zu"/>
                             <constraint firstItem="CSL-UF-ypb" firstAttribute="leading" secondItem="bFO-UD-ZWO" secondAttribute="leading" constant="49" id="oLh-e4-5qJ"/>
                         </constraints>
