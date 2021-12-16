@@ -24,14 +24,27 @@ class LocationPickerViewController: UIViewController {
     }
     
     func getLonLat(){
-        let url = URL(string: "https://api.openweathermap.org/geo/1.0/direct?q="+place.text!+"&limit=1&appid=fcb4fbfa729f884eb0e2df29ae31aea0")!
-        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
-            guard let ret = data else { return }
-            let decoder = JSONDecoder()
-            let temp : [Location] = try! decoder.decode([Location].self, from: ret)
-            self.sendData(name: temp[0].name, lon: String(temp[0].lon), lat: String(temp[0].lat), country: temp[0].country, state: temp[0].state)
+        let url = URL(string: "https://api.openweathermap.org/geo/1.0/direct?q="+place.text!+"&limit=1&appid=fcb4fbfa729f884eb0e2df29ae31aea0") ?? nil
+        
+        print(place.text!)
+        if(url !=  nil){
+            let task = URLSession.shared.dataTask(with: url!) {(data, response, error) in
+                guard let ret = data else { return }
+                let decoder = JSONDecoder()
+                let temp : [Location] = try! decoder.decode([Location].self, from: ret)
+                if(temp.count > 0){
+                    self.sendData(name: temp[0].name, lon: String(temp[0].lon), lat: String(temp[0].lat), country: temp[0].country, state: temp[0].state)
+                }
+               
+                }
+            task.resume()
+            _ = navigationController?.popToRootViewController(animated: true)
         }
-        task.resume()
+        else{
+            let alert = UIAlertController(title: "Error!", message: "Location Invalid!. Please try again", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Close", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     func sendData(name : String, lon : String, lat : String, country : String, state : String){

@@ -326,7 +326,7 @@
                                     <constraint firstAttribute="height" constant="56" id="axZ-EH-Ymk"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Add Location"/>
                                 <connections>
                                     <action selector="addLocation" destination="7Q9-lO-NNg" eventType="touchUpInside" id="Mnp-Yb-xMk"/>
                                 </connections>
@@ -632,7 +632,7 @@ aG9yaXRpZXMuClByb2NlZWQgd2l0aCBjYXV0aW9uA
                                 <rect key="frame" x="0.0" y="270" width="414" height="89"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 hour or 24 hour clock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDI-sF-r3r">
-                                        <rect key="frame" x="26" y="33.666666666666686" width="195" height="22"/>
+                                        <rect key="frame" x="26" y="33.666666666666686" width="195" height="21.666666666666671"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -662,7 +662,7 @@ aG9yaXRpZXMuClByb2NlZWQgd2l0aCBjYXV0aW9uA
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G58-Mf-GCn">
-                                        <rect key="frame" x="309" y="29" width="49" height="31"/>
+                                        <rect key="frame" x="309" y="29" width="51" height="31"/>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" red="0.98039871450000005" green="0.98038035629999998" blue="0.98039287330000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
